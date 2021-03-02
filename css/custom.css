@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+
+body,
+html {
+	font-family: "Roboto", sans-serif;
+}
+
+#header {
+	width: 100%;
+	background-color: transparent;
+	transition: background ease-out 0.2s;
+}
+
+#header.active {
+	position: fixed;
+	background-color: #fff;
+	box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+}
+
+/* 
+#header .navbar-collapse {
+	width: auto;
+} */
+
+#header .nav-link {
+	text-transform: uppercase;
+	font-weight: 500;
+	color: #000;
+
+	padding-left: 0;
+	padding-right: 0;
+
+	border-bottom: solid 4px transparent;
+}
+
+#header .nav-link:hover {
+	color: var(--primary);
+	border-bottom: solid 4px var(--secondary);
+}
+
+#slider {
+	background-image: url("../assets/img/slider-bg.svg");
+	background-size: contain;
+}
+
+#slider h1 {
+	text-transform: uppercase;
+	font-weight: 900;
+}
+
+#slider h4 {
+	text-transform: uppercase;
+	font-size: 18;
+}
+
+#products a.product {
+	display: block;
+	background-color: var(--light-gray);
+	border-radius: 5px;
+	text-align: center;
+	padding: 20px;
+	color: #000;
+	text-decoration: none;
+	transition: all 0.2s ease-in-out;
+}
+
+#products a.product:hover {
+	background-color: #fff;
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.12);
+	transform: scale(1.1);
+}
+
+#products p {
+	color: var(--dark-gray);
+}
+
+#products .img-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	height: 200px;
+}
+
+#products .img-container img {
+	max-height: 160px;
+}
